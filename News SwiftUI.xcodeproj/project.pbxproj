@@ -11,6 +11,10 @@
 		7B6EB36B26A2D99500C1812F /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B6EB36A26A2D99500C1812F /* Colors.xcassets */; };
 		7B6EB37026A2FAF700C1812F /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6EB36F26A2FAF700C1812F /* Colors.swift */; };
 		7B6EB37326A3082E00C1812F /* String+Localize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6EB37226A3082E00C1812F /* String+Localize.swift */; };
+		7B6EB38A26A315CC00C1812F /* NavigationConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6EB38926A315CC00C1812F /* NavigationConfiguration.swift */; };
+		7B6EB38F26A31AA400C1812F /* AlertToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6EB38C26A31AA400C1812F /* AlertToast.swift */; };
+		7B6EB39026A31AA400C1812F /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6EB38D26A31AA400C1812F /* BlurView.swift */; };
+		7B6EB39126A31AA400C1812F /* ActivityIndicatorToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6EB38E26A31AA400C1812F /* ActivityIndicatorToast.swift */; };
 		7BA4BA2526A216C7004D9D81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA4BA2426A216C7004D9D81 /* AppDelegate.swift */; };
 		7BA4BA2726A216C7004D9D81 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA4BA2626A216C7004D9D81 /* SceneDelegate.swift */; };
 		7BA4BA2926A216C7004D9D81 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA4BA2826A216C7004D9D81 /* ContentView.swift */; };
@@ -88,6 +92,10 @@
 		7B6EB36C26A2E6F700C1812F /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/Localizable.strings; sourceTree = "<group>"; };
 		7B6EB36F26A2FAF700C1812F /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		7B6EB37226A3082E00C1812F /* String+Localize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localize.swift"; sourceTree = "<group>"; };
+		7B6EB38926A315CC00C1812F /* NavigationConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationConfiguration.swift; sourceTree = "<group>"; };
+		7B6EB38C26A31AA400C1812F /* AlertToast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertToast.swift; sourceTree = "<group>"; };
+		7B6EB38D26A31AA400C1812F /* BlurView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
+		7B6EB38E26A31AA400C1812F /* ActivityIndicatorToast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorToast.swift; sourceTree = "<group>"; };
 		7BA4BA2126A216C7004D9D81 /* News SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "News SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BA4BA2426A216C7004D9D81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7BA4BA2626A216C7004D9D81 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -348,6 +356,24 @@
 			path = Activity;
 			sourceTree = "<group>";
 		};
+		7B6EB38826A315B100C1812F /* NavigationConfiguration */ = {
+			isa = PBXGroup;
+			children = (
+				7B6EB38926A315CC00C1812F /* NavigationConfiguration.swift */,
+			);
+			path = NavigationConfiguration;
+			sourceTree = "<group>";
+		};
+		7B6EB38B26A31A9800C1812F /* ToastView */ = {
+			isa = PBXGroup;
+			children = (
+				7B6EB38E26A31AA400C1812F /* ActivityIndicatorToast.swift */,
+				7B6EB38C26A31AA400C1812F /* AlertToast.swift */,
+				7B6EB38D26A31AA400C1812F /* BlurView.swift */,
+			);
+			path = ToastView;
+			sourceTree = "<group>";
+		};
 		7BA4BA1826A216C7004D9D81 = {
 			isa = PBXGroup;
 			children = (
@@ -536,6 +562,8 @@
 		7BA4BA9926A21E26004D9D81 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				7B6EB38B26A31A9800C1812F /* ToastView */,
+				7B6EB38826A315B100C1812F /* NavigationConfiguration */,
 				7B6EB38426A30A2900C1812F /* Tabbar */,
 				7BA4BA9A26A21E26004D9D81 /* PageView */,
 				7BA4BA9D26A21E26004D9D81 /* HeadLines */,
@@ -781,12 +809,14 @@
 				7BA4BAD926A21F64004D9D81 /* LocalArticleRow.swift in Sources */,
 				7BA4BAB526A21E55004D9D81 /* TabbedView.swift in Sources */,
 				7BA4BAAB26A21E26004D9D81 /* PageViewController.swift in Sources */,
+				7B6EB39126A31AA400C1812F /* ActivityIndicatorToast.swift in Sources */,
 				7BA4BAD226A21F26004D9D81 /* SearchBarView.swift in Sources */,
 				7BA4BA8726A21AA1004D9D81 /* EndPointProtocol.swift in Sources */,
 				7BA4BAA726A21E26004D9D81 /* ArticlesList.swift in Sources */,
 				7BA4BACB26A21EB2004D9D81 /* ArticlesFromSourceView.swift in Sources */,
 				7BA4BACD26A21EB2004D9D81 /* SourcesListViewModel.swift in Sources */,
 				7BA4BA7E26A21A79004D9D81 /* LocalArticle.swift in Sources */,
+				7B6EB39026A31AA400C1812F /* BlurView.swift in Sources */,
 				7BA4BAAD26A21E26004D9D81 /* TopHeadLineRow.swift in Sources */,
 				7BA4BA2726A216C7004D9D81 /* SceneDelegate.swift in Sources */,
 				7BA4BA7A26A21A79004D9D81 /* Sources.swift in Sources */,
@@ -795,12 +825,14 @@
 				7BA4BAB126A21E26004D9D81 /* ArticleFromCategoryView.swift in Sources */,
 				7BA4BA7726A21A79004D9D81 /* ArticleSource.swift in Sources */,
 				7BA4BA2926A216C7004D9D81 /* ContentView.swift in Sources */,
+				7B6EB38F26A31AA400C1812F /* AlertToast.swift in Sources */,
 				7BA4BAAF26A21E26004D9D81 /* ActivityIndicator.swift in Sources */,
 				7BA4BA7826A21A79004D9D81 /* ArticlesResponse.swift in Sources */,
 				7BA4BA8326A21A97004D9D81 /* Container.swift in Sources */,
 				7BA4BAA926A21E26004D9D81 /* MainView.swift in Sources */,
 				7BA4BAB026A21E26004D9D81 /* SafariView.swift in Sources */,
 				7BA4BAA826A21E26004D9D81 /* ArticleRow.swift in Sources */,
+				7B6EB38A26A315CC00C1812F /* NavigationConfiguration.swift in Sources */,
 				7BA4BA8E26A21AB0004D9D81 /* APIProviderErrors.swift in Sources */,
 				7BA4BA8826A21AA1004D9D81 /* ArticleEndPoint.swift in Sources */,
 				7BA4BAAE26A21E26004D9D81 /* TopHeadlinesView.swift in Sources */,

@@ -15,6 +15,6 @@ struct PageView<Page: View>: View {
     }
     
     var body: some View {
-        PageViewController(controllers: viewControllers)
+        PageViewController(controllers: viewControllers).accentColor(.clear)
     }
 }

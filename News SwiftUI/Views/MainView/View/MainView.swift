@@ -21,16 +21,16 @@ struct MainView : View {
                 })
                 .navigationBarTitle(Text("Overview".localized), displayMode: .large)
                 .navigationBarItems(trailing:
-                    Button(
-                        action: {
-                            self.viewModel.getTopHeadlines()
-                        },
-                        label: {
-                            Image(systemName: "arrow.2.circlepath")
-                                .accentColor(NewsColor.BackGround.blackWhite)
-                                .imageScale(.medium)
-                        }
-                    )
+                                        Button(
+                                            action: {
+                                                self.viewModel.getTopHeadlines()
+                                            },
+                                            label: {
+                                                Image(systemName: "arrow.2.circlepath")
+                                                    .accentColor(NewsColor.BackGround.blueWhite)
+                                                    .imageScale(.medium)
+                                            }
+                                        )
                 )
         })
     }
@@ -39,13 +39,14 @@ struct MainView : View {
         List {
             if viewModel.topHeadlines.isEmpty {
                 VStack(alignment: .center) {
-                ActivityIndicatorNew()
-                    .frame(width: 50, height: 50, alignment: .center)
+                    ActivityIndicatorNew()
+                        .frame(width: 50, height: 50, alignment: .center)
                 }.frame(width: UIScreen.main.bounds.width - 50, height: 100, alignment: .center)
             } else {
                 TopHeadlinesView(topHeadlines: viewModel.topHeadlines)
                     .frame(height: UIScreen.main.bounds.width / 4 * 3,
                            alignment: .center)
+                    .padding([.top, .bottom], 20)
                     .clipped()
                     .listRowInsets(EdgeInsets())
             }
