@@ -14,7 +14,7 @@ struct SourcesListView : View {
         NavigationView(content: {
             VStack {
                 if viewModel.sources.isEmpty {
-                    ActivityIndicator()
+                    ActivityIndicatorNew()
                         .frame(width: UIScreen.main.bounds.width,
                                height: 50,
                                alignment: .center)

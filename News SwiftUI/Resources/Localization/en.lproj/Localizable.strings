@@ -1,0 +1,35 @@
+/* 
+  Localizable.strings
+  News SwiftUI
+
+  Created by Emad Bayramy on 7/17/21.
+  
+*/
+"Overview" = "Overview";
+"Top headlines" = "Top headlines";
+"Sources" = "Sources";
+"Search" = "Search";
+"Favorites" = "Favorites";
+"Search articles..." = "Search articles...";
+"About source:\n" = "About source:\n";
+"Remove from favorites" = "Remove from favorites";
+"Add to favorites" = "Add to favorites";
+"Share" = "Share";
+
+// MARK: - Categories
+"Categories" = "Categories";
+"business" = "business";
+"entertainment" = "entertainment";
+"general" = "general";
+"health" = "health";
+"science" = "science";
+"sports" = "sports";
+"technology" = "technology";
+
+// MARK: Errors
+"You made too many requests within a window of time and have been rate limited. Back off for a while." = "You made too many requests within a window of time and have been rate limited. Back off for a while.";
+"Server error." = "Server error.";
+"Empty data." = "Empty data.";
+"Data has invalid format." = "Data has invalid format.";
+"Something goes wrong." = "Something goes wrong.";
+"You've denied location authorization" = "You've denied location authorization";

@@ -41,7 +41,7 @@ struct ArticlesFromSourceView: View {
     private var mainView: some View {
         VStack {
             if viewModel.articles.isEmpty {
-                ActivityIndicator()
+                ActivityIndicatorNew()
                     .frame(width: UIScreen.main.bounds.width,
                            height: 50,
                            alignment: .center)

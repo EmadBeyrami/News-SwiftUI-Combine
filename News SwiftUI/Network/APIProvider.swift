@@ -21,7 +21,10 @@ class APIProvider<Endpoint: EndpointProtocol> {
     
     // MARK: - Request building
     private func performRequest(for endpoint: Endpoint) -> URLRequest? {
-        print("===========================Start Request==============================")
+        print("=========================== Start Request Log ==============================")
+        defer {
+            print("=========================== End Request Log ==============================")
+        }
         print("URL:  ",endpoint.absoluteURL)
         guard var urlComponents = URLComponents(string: endpoint.absoluteURL) else {
             return nil

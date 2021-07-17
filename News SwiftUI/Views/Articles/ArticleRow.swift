@@ -25,7 +25,7 @@ struct ArticleRow : View {
                        alignment: .center)
             
             Rectangle()
-                .foregroundColor(.black)
+                .foregroundColor(NewsColor.BackGround.blackWhite)
                 .opacity(0.6)
             
             articleInfo
@@ -33,7 +33,7 @@ struct ArticleRow : View {
         .cornerRadius(8)
         .padding([.leading, .trailing], 16)
         .padding([.top, .bottom], 8)
-        .shadow(color: .black, radius: 5, x: 0, y: 0)
+        .shadow(color: NewsColor.BackGround.lightGreyLightBlack, radius: 5, x: 0, y: 0)
         .contextMenu {
             Button(
                 action: {
@@ -66,7 +66,7 @@ struct ArticleRow : View {
     private var articleInfo: some View {
         VStack {
             Text(verbatim: article.source?.name ?? "")
-                .foregroundColor(.white)
+                .foregroundColor(NewsColor.BackGround.whiteBlack)
                 .font(.subheadline)
                 .lineLimit(nil)
                 .padding([.leading, .trailing])
@@ -74,7 +74,7 @@ struct ArticleRow : View {
                        alignment: .bottomLeading)
             
             Text(verbatim: article.title ?? "")
-                .foregroundColor(.white)
+                .foregroundColor(NewsColor.BackGround.whiteBlack)
                 .font(.headline)
                 .lineLimit(nil)
                 .padding([.leading, .bottom, .trailing])

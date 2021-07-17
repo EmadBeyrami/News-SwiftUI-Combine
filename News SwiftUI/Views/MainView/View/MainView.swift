@@ -27,7 +27,7 @@ struct MainView : View {
                         },
                         label: {
                             Image(systemName: "arrow.2.circlepath")
-                                .accentColor(Color("BlackColor"))
+                                .accentColor(NewsColor.BackGround.blackWhite)
                                 .imageScale(.medium)
                         }
                     )
@@ -38,7 +38,10 @@ struct MainView : View {
     private var mainViewList: some View {
         List {
             if viewModel.topHeadlines.isEmpty {
-                ActivityIndicator()
+                VStack(alignment: .center) {
+                ActivityIndicatorNew()
+                    .frame(width: 50, height: 50, alignment: .center)
+                }.frame(width: UIScreen.main.bounds.width - 50, height: 100, alignment: .center)
             } else {
                 TopHeadlinesView(topHeadlines: viewModel.topHeadlines)
                     .frame(height: UIScreen.main.bounds.width / 4 * 3,

@@ -37,13 +37,7 @@ struct TabedView : View {
                     Image(systemName: "heart.fill")
                         .font(.system(size: 22))
                 }
-            
-//            WeatherView()
-//                .tabItem {
-//                    Image(systemName: "cloud.sun.fill")
-//                        .font(.system(size: 22))
-//                }
         }
-        .accentColor(.black)
+        .accentColor(NewsColor.BackGround.blueWhite)
     }
 }
