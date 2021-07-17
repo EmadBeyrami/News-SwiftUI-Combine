@@ -1,0 +1,35 @@
+/* 
+  Localizable.strings
+  News SwiftUI
+
+  Created by Emad Bayramy on 7/17/21.
+  
+*/
+"Overview" = "Oversigt";
+"Top headlines" = "Top overskrifter";
+"Sources" = "Kilder";
+"Search" = "Søg";
+"Favorites" = "Foretrukne";
+"Search articles..." = "Søg i artikler ...";
+"About source:\n" = "Om kilde:\n";
+"Remove from favorites" = "Fjern fra favoritter";
+"Add to favorites" = "Tilføj til favoritter";
+"Share" = "Del";
+
+// MARK: - Categories
+"Categories" = "Kategorier";
+"business" = "forretning";
+"entertainment" = "underholdning";
+"general" = "generel";
+"health" = "sundhed";
+"science" = "videnskab";
+"sports" = "sport";
+"technology" = "teknologi";
+
+// MARK: Errors
+"You made too many requests within a window of time and have been rate limited. Back off for a while." = "Du fremsatte for mange anmodninger inden for et tidsvindue og er blevet begrænset til sats. Sluk et stykke tid.";
+"Server error." = "Server Fejl.";
+"Empty data." = "Tomme data.";
+"Data has invalid format." = "Data har ugyldigt format.";
+"Something goes wrong." = "Noget går galt.";
+"You've denied location authorization" = "Du har nægtet placeringstilladelse";

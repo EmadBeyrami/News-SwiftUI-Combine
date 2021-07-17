@@ -1,0 +1,16 @@
+//
+//  Production.xcconfig
+//  News SwiftUI
+//
+//  Created by Emad Bayramy on 7/17/21.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+APP_NAME = News
+BASE_BUNDLE_ID = com.beyrami.news
+URL_SCHEME = setarehavval
+APP_VERSION = 0.1
+APP_ICON = AppIcon-production
+BASE_API_URL = https:\/\/newsapi.org\/
