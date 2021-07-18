@@ -10,7 +10,7 @@ import CoreData
 
 
 class LocalArticle: NSManagedObject {
-    
+    // MARK: - CoreData LocalArticle Entity Model
     @nonobjc class func fetchRequest() -> NSFetchRequest<LocalArticle> {
         return NSFetchRequest<LocalArticle>(entityName: "LocalArticle")
     }

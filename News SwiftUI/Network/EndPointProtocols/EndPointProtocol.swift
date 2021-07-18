@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+// MARK: - EndPoint Protocol
 protocol EndpointProtocol {
     var locale: String { get }
     
@@ -21,6 +21,7 @@ protocol EndpointProtocol {
     var headers: [String: String] { get }
 }
 
+// MARK: - Trait for setting user Language and Region for Api Calls
 extension EndpointProtocol {
     var locale: String {
         return Locale.current.languageCode ?? "en"

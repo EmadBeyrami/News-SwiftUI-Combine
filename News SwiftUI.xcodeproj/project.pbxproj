@@ -448,14 +448,13 @@
 			isa = PBXGroup;
 			children = (
 				7B6EB38526A30A3C00C1812F /* AppDelegate */,
-				7BA4BADC26A21FCD004D9D81 /* Extensions */,
+				7BA4BA5726A216EA004D9D81 /* Xcode Config */,
+				7BA4BA6726A21A59004D9D81 /* Network */,
 				7BA4BA8F26A21B13004D9D81 /* Resources */,
 				7BA4BA7226A21A79004D9D81 /* Local Storage */,
-				7BA4BA6726A21A59004D9D81 /* Network */,
-				7BA4BA5726A216EA004D9D81 /* Xcode Config */,
-				7BA4BA9326A21E26004D9D81 /* Views */,
-				7BA4BA3526A216C9004D9D81 /* Info.plist */,
+				7BA4BA9326A21E26004D9D81 /* Scenes */,
 				7BA4BA2F26A216C9004D9D81 /* Preview Content */,
+				7BA4BADC26A21FCD004D9D81 /* Extensions */,
 			);
 			path = "News SwiftUI";
 			sourceTree = "<group>";
@@ -574,6 +573,7 @@
 		7BA4BA8F26A21B13004D9D81 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				7BA4BA3526A216C9004D9D81 /* Info.plist */,
 				7BA4BA2D26A216C9004D9D81 /* Assets.xcassets */,
 				7B6EB37726A3089400C1812F /* CoreData */,
 				7B6EB37426A3085500C1812F /* Localization */,
@@ -582,10 +582,9 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		7BA4BA9326A21E26004D9D81 /* Views */ = {
+		7BA4BA9326A21E26004D9D81 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				7BA4BA2826A216C7004D9D81 /* ContentView.swift */,
 				7BA4BA9926A21E26004D9D81 /* Components */,
 				7B6EB38626A30B6A00C1812F /* LaunchScreen */,
 				7BA4BAD526A21F64004D9D81 /* Favorites */,
@@ -595,8 +594,9 @@
 				7BA4BA9426A21E26004D9D81 /* Articles */,
 				7B6EB37826A3090800C1812F /* MainView */,
 				7B6EB38726A30B7E00C1812F /* Activity */,
+				7BA4BA2826A216C7004D9D81 /* ContentView.swift */,
 			);
-			path = Views;
+			path = Scenes;
 			sourceTree = "<group>";
 		};
 		7BA4BA9426A21E26004D9D81 /* Articles */ = {

@@ -8,6 +8,7 @@
 import Foundation
 
 extension String {
+    // MARK: Capitalize first letter
     func capitalizeFirstLetter() -> String {
         return prefix(1).uppercased() + dropFirst()
     }

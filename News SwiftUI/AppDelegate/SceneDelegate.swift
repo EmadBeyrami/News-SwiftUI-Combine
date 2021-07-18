@@ -20,6 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
     
     func sceneDidEnterBackground(_ scene: UIScene) {
+        // MARK: - Save Data Before closing app
         CoreDataManager.shared.saveContext()
     }
 }

@@ -7,6 +7,7 @@
 
 import Foundation
 
+// MARK: - EndPoint Path
 enum ArticleEndpoint: EndpointProtocol {
     case getTopHeadlines
     case getArticlesFromCategory(_ category: String)
@@ -14,6 +15,7 @@ enum ArticleEndpoint: EndpointProtocol {
     case getArticlesFromSource(_ source: String)
     case searchForArticles(searchFilter: String)
     
+    // MARK: Base Url from Info.Plist
     struct InfoPlistKey {
         static let baseAPIURL = "BaseAPIURL"
     }
@@ -37,6 +39,7 @@ enum ArticleEndpoint: EndpointProtocol {
         }
     }
     
+    // MARK: - Body and Query Params
     var params: [String: String] {
         switch self {
         case .getTopHeadlines:
@@ -56,6 +59,7 @@ enum ArticleEndpoint: EndpointProtocol {
         }
     }
     
+    // MARK: - Header
     var headers: [String: String] {
         return [
             "X-Api-Key": Container.newsAPIKey,

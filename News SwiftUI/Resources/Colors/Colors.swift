@@ -9,6 +9,8 @@ import SwiftUI
 
 typealias NewsColor = Color
 
+// MARK: - All the color used in project stored here
+/// it contains both DarkMode and LightMode Colors
 extension NewsColor {
 
     enum BackGround {

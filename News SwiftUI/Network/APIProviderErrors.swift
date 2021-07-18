@@ -7,6 +7,7 @@
 
 import Foundation
 
+// MARK: - Network Layer Errors
 enum APIProviderErrors: LocalizedError {
     case invalidURL
     case dataNil

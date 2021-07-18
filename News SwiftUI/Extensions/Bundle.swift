@@ -8,10 +8,7 @@
 import Foundation
 
 extension Bundle {
-    public func load<T>(_ nibName: String = String(describing: T.self), owner: Any? = nil) -> T {
-        return loadNibNamed(nibName, owner: owner, options: nil)?.first as! T
-    }
-    
+    // MARK: - read data from info Dictionary
     public func info(for key: String) -> String! {
         guard let value = infoDictionary?[key] else {
             return nil
@@ -19,6 +16,7 @@ extension Bundle {
         return (value as! String).replacingOccurrences(of: "\\", with: "")
     }
     
+    // MARK: - reads a file from dataManager
     public func read(fileName: String, type: String) -> String? {
         autoreleasepool {
             if let path = self.path(forResource: fileName, ofType: type) {

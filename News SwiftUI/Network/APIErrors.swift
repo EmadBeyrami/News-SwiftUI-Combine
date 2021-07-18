@@ -7,9 +7,11 @@
 
 import Foundation
 
+// MARK: - API Errors
 enum APIErrors: Int, LocalizedError {
     case badRequest = 400
     case unAuthorized = 401
+    case forbiden = 403
     case tooManyRequests = 429
     case serverError = 500
     

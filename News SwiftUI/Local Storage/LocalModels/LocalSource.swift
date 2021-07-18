@@ -9,7 +9,7 @@ import Foundation
 import CoreData
 
 class LocalSource: LocalArticle {
-    
+    // MARK: - CoreData Source Entity Model
     @nonobjc class func fetchRequest() -> NSFetchRequest<LocalSource> {
         return NSFetchRequest<LocalSource>(entityName: "LocalSource")
     }

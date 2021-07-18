@@ -8,7 +8,9 @@
 import Foundation
 import Combine
 
+// MARK: - Network Layer
 class APIProvider<Endpoint: EndpointProtocol> {
+    // MARK: check the URL and Data
     func getData(from endpoint: Endpoint) -> AnyPublisher<Data, Error> {
         guard let request = performRequest(for: endpoint) else {
             return Fail(error: APIProviderErrors.invalidURL)

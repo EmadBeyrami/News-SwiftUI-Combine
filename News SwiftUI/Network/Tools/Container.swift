@@ -8,6 +8,7 @@
 import Foundation
 
 class Container {
+    // MARK: - JsonDecoder
     static let jsonDecoder: JSONDecoder = JSONDecoder()
 
     static var weatherJSONDecoder: JSONDecoder = {
@@ -16,6 +17,7 @@ class Container {
         return jsonDecoder
     }()
     
+    // MARK: - API KEYS
     /// News API key url: https://newsapi.org
     #warning("Add Your API Key Here")
     static let newsAPIKey: String = "YOUR_API_KEY"
