@@ -8,7 +8,7 @@ I will write a medium article about it in further future.
 - The only dependency used is KingFisher (v-5.13.0). I add it using swift package manager you can add it using whatever dependecy manager you like.
 
 ## Warning!
-Consider this app as my very very first SwiftUI + Combine project experience. There are a lots of UX and Codebase Problem. this is not how I ussually code. I will try to refactor and improve it in further future.
+Consider this app as my very very first SwiftUI + Combine project experience which I developed in less than a two days. There are a lots of UX and Codebase Problem. this is not how I ussually code. I will try to refactor and improve it in further future.
 
 ### Current Features:
 - Completely Native: Used SwiftUI and Combine and CoreDate
