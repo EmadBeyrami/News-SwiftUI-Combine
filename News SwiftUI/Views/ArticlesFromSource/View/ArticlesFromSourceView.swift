@@ -21,14 +21,7 @@ struct ArticlesFromSourceView: View {
                 self.viewModel.getArticles(from: self.source.id)
             })
             .sheet(isPresented: $shouldPresent) {
-                if let url = self.articleURL {
-                    SafariView(url: url)
-                } else {
-                    AlertToast(displayMode: .alert,
-                               type: .error(.red),
-                               title: "Empty data.".localized,
-                               subTitle: "")
-                }
+                SafariView(url: ((self.articleURL) ?? URL(string: "http://www.error.com"))!)
             }
             .navigationBarItems(trailing:
                 HStack {

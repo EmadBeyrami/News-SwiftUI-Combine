@@ -27,7 +27,7 @@ struct ArticlesList : View {
             }
         }
         .sheet(isPresented: $shouldPresent) {
-            SafariView(url: self.articleURL!)
+            SafariView(url: ((self.articleURL) ?? URL(string: "http://www.error.com"))!)
         }
     }
 }

@@ -31,7 +31,7 @@ struct FavoritesView: View {
             }
             .navigationBarTitle(Text(Constants.title), displayMode: .automatic)
             .sheet(isPresented: $shouldPresent) {
-                SafariView(url: self.articleURL!)
+                SafariView(url: ((self.articleURL) ?? URL(string: "http://www.error.com"))!)
             }
         }
     }
