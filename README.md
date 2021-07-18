@@ -12,7 +12,7 @@ Consider this app as my very very first SwiftUI + Combine project experience. Th
 
 ### Current Features:
 - Completely Native: Used SwiftUI and Combine and CoreDate
-- Localization
+- Localization: Currently Supports English and Danish (Change language in Setting)
 - Have two Enviroments: Development and Production
 - Modularized
 - Pageable Breaking News
